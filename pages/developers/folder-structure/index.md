@@ -1,49 +1,48 @@
-# Folder structure
+# Структура папок
 <!-- position: 2 -->
 
-Here's the basic folder structure for Bludit.
+Это базовая структура папок
 ```
-/bl-content/	<-- Databases and uploaded images
-/bl-kernel/		<-- Core of Bludit
-/bl-languages/	<-- Languages files
-/bl-plugins/	<-- Plugins
-/bl-themes/		<-- Themes
+/bl-content/	<-- Базы данных и весь загруженный контент на сайт
+/bl-kernel/		<-- Ядро Bludit
+/bl-languages/	<-- Языковые пакеты/файлы
+/bl-plugins/	<-- Плагины
+/bl-themes/		<-- Темы
 ```
 
 ## bl-content
-This folder is very important, as it is where Bludit stores all files, as well as databases and images. Before updating your Bludit installation, it's highly recommended to make a backup of this folder.
-
+Это одна из важных папок Bludit. Именно в ней хранятся базы данных и весь загруженный контент на сайт. (Статьи, изображения, пользователи и т.п.)
 ```
 /bl-content/
 
 	databases/
-		plugins/		<-- Database: plugins
-		pages.php		<-- Database: pages
-		security.php	<-- Database: black list, brute force protection, others
-		site.php		<-- Database: site variables, name, description, slogan, others
-		tags.php		<-- Database: tags
-		users.php		<-- Database: users
+		plugins/		<-- База данных плагинов
+		pages.php		<-- База данных страниц
+		security.php	<-- База данных настроек безопасности
+		site.php		<-- База данных настроек сайта
+		tags.php		<-- База данных тегов
+		users.php		<-- База данных пользователей
 
-	pages/				<-- Content: pages
+	pages/				<-- Содержимое: страницы
 		about/index.txt
 		food/index.txt
 
-	tmp/				<-- Temp files
+	tmp/				<-- Временные файлы
 
-	uploads/			<-- Uploaded files
-		profiles/		<-- Profiles images
-		thumbnails/		<-- Thumbnails images
+	uploads/			<-- Загруженные файлы
+		profiles/		<-- Изображения профилей
+		thumbnails/		<-- Изображения обложек страниц
 		photo1.jpg
 		photo2.png
 
-	workspaces/			<-- Workspaces for the plugins
+	workspaces/			<-- Рабочее место для плагинов
 ```
 
 ## bl-kernel
-This folder contains the core of Bludit.
+Эта папка содержит ядро Bludit.
 
 ## bl-languages
-This folder contains all language files. Each file is a JSON document, encoded in UTF-8.
+Эта папка содержит языковые пакеты, хранящиеся в формате JSON и имеющие кодировку UTF-8.
 
 ```
 /bl-languages/
@@ -56,7 +55,7 @@ This folder contains all language files. Each file is a JSON document, encoded i
 ```
 
 ## bl-plugins
-This folder contains all plugins. New plugins you download should be uploaded here.
+Эта папка содержит плагины. В нее загружаются все новые плагины.
 
 ```
 /bl-plugins/
@@ -69,7 +68,7 @@ This folder contains all plugins. New plugins you download should be uploaded he
 ```
 
 ## bl-themes
-This folder contains all themes. New themes you download should be uploaded here.
+Эта папка содержит темы. В нее загружаются темы.
 
 ```
 /bl-themes/

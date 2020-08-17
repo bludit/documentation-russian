@@ -1,34 +1,38 @@
-# Custom fields
+# Пользовательские поля
 <!-- position: 7 -->
 
-## Introduction
-Custom fields allow the user to add fields to the content database; The custom fields appear in the admin panel interface when you create or edit content.
+## Вступление
+Настраиваемые поля позволяют пользователю добавлять поля в базу данных страницы. Настраиваемые поля появляются в интерфейсе панели администратора при создании или редактировании страниц.
 
-## Quick example
-Add a custom field called `subtitle`. Go to:
+## Простой пример
+Добавим поле **Подзаголовок**
 ```
-Admin panel > Sidebar > Settings > General > Custom fields
+Админ Панель > Боковая панель > Настройки > Основные > Настраиваемые поля
 ```
 
-Add the following JSON text to the textarea and click in the button "Save".
+Добавим JSON код и нажмем кнопку "Сохранить".
 ```
 {
     "subtitle": {
         "type": "string",
-        "placeholder": "Subtitle for the page",
+        "placeholder": "Подзаголовок страницы",
 		"position": "bottom"
     }
 }
 ```
 
-Now create a new page. Go to:
+Теперь давайте создадим страницу:
 ```
-Admin panel > Sidebar > New content
+Админ Панель > Управление > Новая запись
 ```
 
-As you can see there is a new field at the bottom of the editor requesting a "Subtitle for the page". Complete the "Title", "Content" and the new field "Subtitle for the page" and click on the button "Save".
+Как вы можете видеть, в нижней части редактора появилось новое поле, запрашивающее "подзаголовок для страницы". Заполните поля "заголовок", "содержание" и новое поле "субтитры для страницы"и нажмите на кнопку "Сохранить".
 
-The new page has a custom field called `subtitle` and you can print the value from the theme. For example.
+Теперь на любой странице есть переменная, которая хранит текст с поля "подзаголовок". Но обычные пользователи его не будут видеть, т.к. следует добавить эту переменную в настройки темы, чтобы она отображалась.
+<div class="note">
+<div class="title">Примечание</div>
+Любая тема строится по шаблону, в любой теме есть папка **PHP** в ней находятся эти шаблоны. Если мы хотим вывести "подзаголовок" на странице материала, то выберем файл **page.php** и добавим текст в место где хотим видеть "подзаголовок".
+</div>
 ```
 <?php
 	echo "The title of the page is " . $page->title();
@@ -36,24 +40,24 @@ The new page has a custom field called `subtitle` and you can print the value fr
 ?>
 ```
 
-## Structure
-The structure is defined in the JSON format, and supports the following keys:
-- (required) `type`: Type of the custom field, supported values (`string`, `bool`).
-- (optional) `label`: The label for the custom field.
-- (optional) `tip`: Small text for the user to describe the custom field.
-- (optional) `default`: Default value for the custom field.
-- (optional) `placeholder`: Small text inside the field.
-- (optional) `position`: Position in the editor, supported values (`top`, `bottom`). Default value is empty and the field apper in "Editor > Options > Custom".
+## Структура поля в JSON.
+Поле создается в формате JSON со следующими ключами
+- (required) `type`: Тип поля (`string`, `bool`).
+- (optional) `label`: Метка поля.
+- (optional) `tip`: Описание поля.
+- (optional) `default`: Первоначальное значение поля.
+- (optional) `placeholder`: Текст внутри поля.
+- (optional) `position`: Расположение поля в редакторе, например (`top`, `bottom`).
 
-## Add custom fields
-To add custom fields go to:
+## Добавление пользовательского поля
+Чтобы добавить пользовательское поле, перейдите:
 ```
-Admin panel > Sidebar > Settings > General > Custom fields
+Админ Панель > Боковая панель > Настройки > Основные > Настраиваемые поля
 ```
 
-To define custom field, you need to generate a JSON structure. Check out the following examples:
+Чтобы создать поле, мы должны определить его в системе через JSON стурктуру. Пример:
 
-Custom field as `string` and the key name `youtube`:
+Пользовательское поле `string` с именем `youtube`:
 ```
 {
     "youtube": {
@@ -64,7 +68,7 @@ Custom field as `string` and the key name `youtube`:
 }
 ```
 
-Custom field as `boolean` and the key name `inStock`:
+Пользовательское поле `boolean` с именем `inStock`:
 ```
 {
     "inStock": {
@@ -75,7 +79,7 @@ Custom field as `boolean` and the key name `inStock`:
 }
 ```
 
-Two custom fields with different types.
+Два пользовательских поля с разными типа
 ```
 {
     "product": {
@@ -91,7 +95,7 @@ Two custom fields with different types.
 }
 ```
 
-Three custom fields with different types and different position in the editor.
+Три пользовательских поля с разными типами и разным положением в редакторе.
 ```
 {
     "product": {
@@ -112,17 +116,17 @@ Three custom fields with different types and different position in the editor.
 }
 ```
 
-## Get custom field
-The class page provides the method `custom()`, which returns the value of the field.
+## Вызов пользовательского поля
+Существует класс, который возвращает значения вызываемых полей - `custom()`.
 
-The following example prints the value of the field `youtube` from the above example.
+В следующем примере выводится значение поля `youtube` из приведенного ниже примера.
 ```
 <?php
     echo $page->custom('youtube');
 ?>
 ```
 
-Check the boolean value from the field `inStock` from the above example.
+Проверка boolean значения в поле `inStock` из приведенного ниже примера.
 ```
 <?php
     if ($page->custom('inStock')) {
@@ -133,10 +137,12 @@ Check the boolean value from the field `inStock` from the above example.
 ?>
 ```
 
-## Delete custom field
-To delete a custom field you just need to remove the entry from the JSON structure. The custom fields are not completely deleted from the database when you do this, but they are invalidated.
-
-If you want to remove all custom fields, just set an empty JSON in the textarea, as following:
+## Удаление пользовательских полей
+Чтобы удалить пользовательское поле, вам достаточно убрать его JSON структуру в:
+```
+Админ Панель > Боковая панель > Настройки > Основные > Настраиваемые поля
+```
+Однако, это не удалит полностью поле из базы данных Bludit на вашем сайте, а лишь сделает его неактивным.
 ```
 {}
 ```

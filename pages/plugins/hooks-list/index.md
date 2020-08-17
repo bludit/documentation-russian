@@ -1,9 +1,9 @@
-# Hooks list
+# Hooks лист
 <!-- position: 2 -->
 
-Here is a list of Hooks supported by Bludit:
+Это Hook лист поддерживаемый Bludit:
 
-| Hooks 			| Execute in 		| Notes						|
+| Hooks 			| Execute in 		| Примечание						|
 | |--|--|
 | siteHead 			| Theme 		|						|
 | siteBodyBegin 		| Theme 		|						|
@@ -31,5 +31,5 @@ Here is a list of Hooks supported by Bludit:
 
 <div class="note">
 <div class="title">Note</div>
-Not all themes support the hooks listed above.
+Не все темы поддерживают данные Hook'и.
 </div>

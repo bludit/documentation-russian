@@ -1,39 +1,38 @@
-# Title and description
+# Название и описание
 <!-- position: 2 -->
 
-Bludit provides helpers to help developers by allowing them to write less code, and keep it cleaner.
+Bludit позволяет разработчикам использовать готовые методы и писать код чище, быстрее, красивее.
 
-<h2 id="title">Title</h2>
+<h2 id="title">Заголовок</h2>
 
-Print the `<title>` head tag with dynamic content. The title takes the configuration defined in the settings of your site.
+Вывести `<title>` тег в head с динамическим текстом, можно воспользовавшись(Заголовок принимает конфигурацию, определенную в настройках Вашего сайта.):
 ```
 <?php
 	echo Theme::metaTags('title');
 ?>
 ```
 
-HTML output
+HTML Вывод
 ```
 <title>Page title | Title site</title>
 ```
 
-<h2 id="description">Description</h2>
-
-Print the `<description>` head tag with dynamic content. The description takes the configuration defined in the settings of your site.
+<h2 id="description">Описание</h2>
+Вывести `<description>` тег в head с динамическим текстом, можно воспользовавшись (Описание принимает конфигурацию, определенную в настройках Вашего сайта.):
 ```
 <?php
 	echo Theme::metaTags('description');
 ?>
 ```
 
-HTML output
+HTML Вывод
 ```
 <meta name="description" content="Description about your site">
 ```
 
-<h2 id="example">Example</h2>
+<h2 id="example">Пример</h2>
 
-Here is a complete example of how to use the title and description in a theme.
+Вот полный пример того, как использовать заголовок и описание в теме.
 
 ```
 <!DOCTYPE html>

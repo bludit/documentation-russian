@@ -1,29 +1,29 @@
-# Add a read more link
+# Добваление ссылки "Читать дальше"
 <!-- position: 4 -->
 
-You can split the content of the page into two parts. The first part will be visible on the homepage with a `Read more` button.
+Вы можете разделить содержимое страницы на две части. Первая часть будет видна на главной странице, а вторая часть будет видна только после нажатия кнопки `Читать дальше`.
 
-To split the content, click on the `Page Break` button, which is located on the toolbar above the main text editor.
+Чтобы разделить содержимое, нажмите на кнопку `Page Break`, которая находится на панели инструментов над главным текстовым редактором.
 
-Here's a video with all the steps:
+Видео иллюстрирующее данные действия.
 <div class="videoWrapper">
 	<iframe width="640" height="360" src="https://www.youtube.com/embed/Ev5kNwFyVdY?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ---
 
-You can do the same thing in the Markdown editor by adding the tag `<!-- pagebreak -->`.
+Вы можете сделать то же самое в редакторе Markdown, добавив тег `<!-- pagebreak -->`.
 ```
-This is the first part of the content of the page.
+Первая часть содержимого
 
 <!-- pagebreak -->
 
-This is the second part of the page.
+Вторая часть содержимго
 ```
 
 ---
 
 <div class="note">
 <div class="title">Note</div>
-This feature is handled by theme you have installed, and not all Bludit themes will support it.
+В некоторых темах Bludit такая функция автоматическая и не требует вмешательства пользователя.
 </div>

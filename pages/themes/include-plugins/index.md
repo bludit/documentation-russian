@@ -1,21 +1,21 @@
-# Include plugins
+# Подключение плагинов
 <!-- position: 6 -->
 
-Bludit supports plugins, and each plugin has hooks; the hooks are functions, and these functions are executed in different places in the theme.
+Bludit позволяет разработчикам использовать готовые методы и писать код чище, быстрее, красивее.
 
-The list of hooks is here:
+Лист с hooks:
 - https://docs.bludit.com/en/plugins/hooks-list
 
-For example, to execute all plugins activated with the hook `siteHead`, you can use the `Theme::plugins()` helper.
+Например, чтобы выполнить все плагины с hook'ом `siteHead`, вы можете использовать метод `Theme::plugins()`.
 ```
 <?php
 	Theme::plugins('siteHead');
 ?>
 ```
 
-<h2 id="example">Example</h2>
+<h2 id="example">Пример</h2>
 
-Here's a complete example of how to include 3 types of hooks, and execute them in the correct place in the theme.
+Вот полный пример того, как подключить 3 типа hook'ов и выполнить их в правильном месте в теме.
 
 ```
 <!DOCTYPE html>

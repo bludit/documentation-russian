@@ -1,16 +1,16 @@
-# Custom hooks for plugins
+# Пользовательские Hook'и для плагинов
 <!-- position: 4 -->
 
-Bludit supports custom hooks for the plugin, you can create your own hook and call it from anywhere.
+Bludit поддерживает пользовательские Hook'и, вы можете создать собственный Hook.
 
 <div class="note">
-This feature is implemented since Bludit v3.13
+Эта функция доступна начиная с Bludit v3.13
 </div>
 
-## Example
-The following example creates two custom hooks `select` and `insert`.
+## Пример
+В следущем примере создаются два пользовательски hook'a `select` и `insert`.
 
-To make it work remember to add the hooks (object methods) inside the array `$this->customHooks` inside the method `init()`.
+Чтобы плагин начала работать, не забудьте указать их внутри массива `$this->customHooks` внутри метода `init()`.
 
 ```php
 <?php
@@ -39,7 +39,7 @@ class MyHooks extends Plugin {
 ?>
 ```
 
-After the plugin is activated you can call the custom hooks via the helper `Theme::plugins` as you do in the themes.
+После активации плагина, вы можете вызывать Hook'и как обычно `Theme::plugins`.
 
 ```php
 <?php

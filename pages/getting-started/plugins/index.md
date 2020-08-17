@@ -1,18 +1,17 @@
-# Plugins
+# Плагины
 <!-- position: 5 -->
 
-Bludit supports plugins to extend its functionality.
+Bludit имеет поддержку плагинов для расширения своей функциональности.
 
-Bludit comes with some preinstalled plugins. But not all are activated by default.
+Bludt поставляется изначально с некоторым количеством плагинов. Но не все они активированы.
 
-You can download additional plugins from the [Bludit Plugins](https://plugins.bludit.com) website.
+Вы можете скачать плагины с официальной страницы [Bludit Plugins](https://plugins.bludit.com).
 
-## How to install a plugin
-1. Download the zip file with the plugin.
-2. Uncompress the zip file.
-3. Copy the plugin folder into the folder `/bl-plugins/` on the server.
+## Как установить плагин?
+1. Скачайте и разархивируйте архив с плагином.
+2. Загрузите разархивированный плагин в папку `/bl-plugins/` на вашем сервере.
 
-## How to activate and configure a plugin
-1. Go to the **Admin panel**, on the left sidebar go to **Settings > Plugins**.
-2. Look for the plugin in the list and click **Activate**.
-3. Most of the plugins allow some configurations when clicking **Settings**.
+## Как включить и настроить плагин?
+1. Перейдите в **Админ-Панель**,на боковой панели выберите **Настройки > Плагины**.
+2. Выберите интересующий вас плагин и нажмите **Активировать**.
+3. Некоторые плагины имеют возможность настройки, выберите интересующий вас плагин и нажмите **Настройки**.

@@ -1,41 +1,41 @@
 # Favicon
 <!-- position: 5 -->
 
-Bludit provides helpers to help developers to write less code.
+Bludit позволяет разработчикам использовать готовые методы и писать код чище, быстрее, красивее.
 
-For the purpose of this tutorial we will use the following names:
-- Name of the theme `box`
-- Site URL `https://www.example.com`
-- Theme path `/bl-themes/box/`
-- Favicon file path `/bl-themes/box/favicon.png`
+В этом уроке мы будем использовать следущие имена:
+- Название темы `box`
+- Адрес сайта `https://www.example.com`
+- Путь к теме `/bl-themes/box/`
+- Путь к файлу CSS `/bl-themes/box/favicon.png``
 
-The next method from the helper `Theme::` generates the head tag for the favicon; by default, the MIME type returned is `image/png`.
+Слудущий метод `Theme::` позволяет подключить favicon на сайт, добавляя мета-тег в описании страниц; По умолчанию MIME возвращает тип `image/png`.
 ```
 <?php
 	echo Theme::favicon('favicon.png');
 ?>
 ```
 
-HTML output
+HTML вывод
 ```
 <link rel="shortcut icon" href="https://www.example.com/bl-themes/box/favicon.png" type="image/png">
 ```
 
-Also, you can specify the MIME type if you want to use another favicon type such as `.ico`.
+Кроме того, вы можете указать тип MIME, если хотите использовать другой тип favicon, например `.ico`.
 ```
 <?php
 	echo Theme::favicon('favicon.ico', 'image/x-icon');
 ?>
 ```
 
-HTML output
+HTML вывод
 ```
 <link rel="shortcut icon" href="https://www.example.com/bl-themes/box/favicon.ico" type="image/x-icon">
 ```
 
-<h2 id="example">Example</h2>
+<h2 id="example">Пример</h2>
 
-Here's a complete example of how to include the favicon in a theme.
+Пример подключения Favicon на сайт.
 
 ```
 <!DOCTYPE html>

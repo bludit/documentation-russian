@@ -1,11 +1,11 @@
-# How to change the editor
+# Как изменить редактор
 <!-- position: 6 -->
 
-By default, Bludit uses the [TinyMCE](https://www.tiny.cloud/) Editor - a simple and clean HTML editor. But you can also choose SimpleMDE which supports Markdown Code. TinyMCE and SimpleMDE are pre-installed on Bludit by default; both are plugins and you can find them in the plugin section.
+По умолчанию, Bludit использует [TinyMCE](https://www.tiny.cloud/) редактор - простой и чистый HTML-редактор. Но вы также можете выбрать SimpleMDE, который поддерживает код Markdown. TinyMCE и SimpleMDE предустановлены на Bludit по умолчанию; оба являются плагинами, и вы можете найти их в разделе плагинов.
 
-## How to switch from TinyMCE to SimpleMDE
-- Log in into the **Admin panel**.
-- Go to **Plugins** on the left menu.
-- Find the plugin **TinyMCE** and click on the **Deactivate** button.
-- Find the plugin **SimpleMDE** and click on the button **Activate** button.
-- You have now enabled SimpleMDE as your content editor.
+## Как заменить TinyMCE на SimpleMDE
+- Войдите в **Админ Панель**.
+- Выберите **Плагины** на боковой панели.
+- Найдите плагин **TinyMCE** и нажмите **Деактивировать**.
+- Найдите плагин **SimpleMDE** и нажмите **Активировать** 
+- Теперь по умолчанию будет использоваться **SimpleMDE** редактор.

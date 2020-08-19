@@ -1,13 +1,12 @@
-# Themes
+# Темы
 <!-- position: 6 -->
 
-Bludit supports themes to change the appearance of your website or blog.
+Bludit имеет поддержку темы, чтобы кастомизировать свой сайт или блог.
 
-You can find themes on the [Bludit Themes](https://themes.bludit.com) website.
+Вы мжете скачать темы с официальной страницы [Bludit Themes](https://themes.bludit.com).
 
-## How to install a theme
-1. Download the zip file with the theme.
-2. Uncompress the zip file.
-3. Copy the theme folder into the folder `/bl-themes/` on the server.
-4. Go to the **Admin panel**, and on the left sidebar go to **Settings > Themes**.
-5. Look for the theme in the list, and click on **Activate**.
+## Как установить тему?
+1. Скачайте и разархивируйте выбранную тему.
+3. Загрузите разархивированные файлы в папку `/bl-themes/` на вашем сервере.
+4. Перейдите в **Админ-Панель**, и на боковой панели выберите **Настройки > Темы**.
+5. Выбирите вашу тему и нажмите **Активировать**.

@@ -1,12 +1,12 @@
-# Theme basics
+# Основы стилизации
 <!-- position: 1 -->
 
-Themes in Bludit are very flexible, and you can use any framework ([Bootstrap](http://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io), [UIkit](https://getuikit.com/), [Semantic UI](https://semantic-ui.com), etc), any Javascript code, whatever you want.
+Темы в Bludit очень гибкие, при создании вы можете использовать любой framework ([Bootstrap](http://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io), [UIkit](https://getuikit.com/), [Semantic UI](https://semantic-ui.com), и т.д.), любой JavaScript код. Все, что захотите!
 
-All themes reside in the `bl-themes` folder, and they have a predefined structure.
+Все темы находятся в папке `bl-themes` и имею предопределенную структуру.
 
-<h2 id="structure">Folder and Files Structure</h2>
-This is the simple (and mandatory) folder and file structure for themes.
+<h2 id="structure">Струкутура папок и файлов</h2>
+Это простая (и обязательная) структура папок и файлов для тем.
 
 ```
 /bl-themes/{THEME_NAME}/
@@ -15,8 +15,8 @@ This is the simple (and mandatory) folder and file structure for themes.
 	index.php
 ```
 
-<h2 id="name-description">Name and Description</h2>
-The name and description of the theme is stored in the `languages/en.json` JSON file.
+<h2 id="name-description">Название и описание</h2>
+Название и описание темы хранится в языковом пакете темы `languages/en.json`.
 
 ```
 {
@@ -28,8 +28,8 @@ The name and description of the theme is stored in the `languages/en.json` JSON 
 }
 ```
 
-<h2 id="information">Information</h2>
-The basic information about the theme is stored in the `metadata.json` JSON file.
+<h2 id="information">Информация</h2>
+Основаная информация о теме хранится в `metadata.json`.
 
 ```
 {
@@ -44,8 +44,8 @@ The basic information about the theme is stored in the `metadata.json` JSON file
 }
 ```
 
-<h2 id="examples">Example Themes</h2>
-We have two examples, one is simple and the second is more complex with CSS and Javascript files.
+<h2 id="examples">Примеры тем</h2>
+У нас есть два примера, один простой, а второй более сложный с файлами CSS и Javascript.
 
 - [My First Theme](https://docs.bludit.com/en/themes/example-my-first-theme)
 - [My Second Theme](https://docs.bludit.com/en/themes/example-my-second-theme)

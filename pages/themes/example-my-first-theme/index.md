@@ -1,15 +1,15 @@
-# Example: My first theme
+# Пример: Моя первая тема
 <!-- position: 101 -->
 
-Let's create a new and simple theme, which I will call `Coffee`.
+Давайте создадим новую тему и дадим ей название `Coffee`.
 
-- Create the theme inside the `/bl-themes/` folder; the path should look like this: `/bl-themes/coffee/`.
-- Create the  `languages` folder, inside the `/bl-themes/coffee/` folder.
-- Create the `en.json` file inside the `/bl-themes/coffee/languages/` folder.
-- Create the `metadata.json` file inside the `/bl-themes/coffee/` folder.
-- Create the `index.php`, file inside the `/bl-themes/coffee/` folder.
+- Создайте тему в каталоге `/bl-themes/`; Путь должен выглядеть вот так: `/bl-themes/coffee/`.
+- Создайте папку с именем `languages`, внутри папки `/bl-themes/coffee/`.
+- Создайте файл `en.json` вунтри папки `/bl-themes/coffee/languages/`.
+- Создайте файл `metadata.json` вунтри папки `/bl-themes/coffee/`.
+- Создайте файл `index.php`, вунтри папки `/bl-themes/coffee/`.
 
-When done, you should have the following folder/file structure:
+Когда это будет сделано, у вас должна быть следующая структура папок и файлов:
 
 ```
 /bl-themes/coffee/
@@ -18,7 +18,7 @@ When done, you should have the following folder/file structure:
 	index.php
 ```
 
-The next step is to create the content of the files. Let's start with the `index.php` and add the following HTML and PHP code:
+Следующим шагом является создание содержимого файлов.  Давайте начнем с `index.php` и добавьте следующий HTML и PHP код:
 
 ```
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ The next step is to create the content of the files. Let's start with the `index
 </html>
 ```
 
-Edit the `languages/en.json` file to add the name and description of your theme.
+Отредактируем файл `languages/en.json` и добавим в него следущий JSON код.
 
 ```
 {
@@ -51,7 +51,7 @@ Edit the `languages/en.json` file to add the name and description of your theme.
 }
 ```
 
-Now edit the `metadata.json` file to complete the information about the theme.
+Отредактируем файл `metadata.json` и напишем подробную информацию о теме.
 
 ```
 {
@@ -66,4 +66,4 @@ Now edit the `metadata.json` file to complete the information about the theme.
 }
 ```
 
-Congrats, you have your first theme for Bludit!. Now you can go to the Settings and activate your theme.
+Поздравляю! Вы создали первую свою тему для Bludit. Теперь вы можете зайти в настройки и активировать ей.

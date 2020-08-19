@@ -1,8 +1,8 @@
-# Custom admin panel URL
+# Пользовательский URL админ панели
 <!-- position: 3 -->
 
-By default, the Bludit admin panel resides in the `/admin/` folder.
+По умолчанию, админ панель находится в папке `/admin/`.
 
-You can change it by editing the `/bl-kernel/boot/variables.php` file. Change the `ADMIN_URI_FILTER` constant to your own chosen value.
+Вы можете изменить адрес в переменных - `/bl-kernel/boot/variables.php`. Измените значение`ADMIN_URI_FILTER`  на ваш адрес.
 
 <pre><code data-language="php">define('ADMIN_URI_FILTER', 'admin');</code></pre>

@@ -1,18 +1,18 @@
-# Disable admin user
+# Отключение пользователя-администратора
 <!-- position: 1 -->
 
-By default, Bluditcreates a user called `admin` as the administrator for the system. Bludit uses this user for password recovery events; if you are going to delete another user and you want to keep his content, this content is assigned to the `admin` user.
+По стандарту, Bludit создает пользователя с именем `admin` в качестве администратора системы. Bludit использует этого пользователя для восстановления пароля. Если вы хотите удалить другого пользователя, без потери его материалов, вы можете передать все его материалы пользователю `admin`.
 
-For security reasons you can disable this user.
+Для большей безопасности, вы можете отключить его.
 
-## How to disable the admin user
-If you are going to disable the Administrator of the system, ensure you have another user with the Administrator role.
+## Как отключить пользователя-администратора.
+Если вы хотите отключить пользователя-администратора, то убедитесь есть ли еще пользователь с ролью администратора.
 
-- Go to the Admin Panel
-- Manage > Users > admin
-- Edit User > Status > Disable the user
+- Зайдите в Админ Панель
+- Управление > Пользователи > admin
+- Безопасность > Status > Отключить пользователя
 
 <div class="note">
-<div class="title">Enable the user</div>
-To enable the user again, you must set a new password.
+<div class="title">Включение пользователяr</div>
+Чтобы снова включить пользователя, просто установите ему новый пароль.
 </div>

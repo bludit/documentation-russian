@@ -1,19 +1,19 @@
-# How to create new content
+# Как добавить новую запись
 <!-- position: 2 -->
 
-Log in into the **Admin panel**, and click on **New content** in the left menu.
+Войдите в **Админ Панель** и нажмите **Новая запись**.
 
-1. Write the title.
-2. Write the content.
-3. Click on the **Publish** button.
-4. Done!
+1. Заполните поле **Название**.
+2. Заполните поле **Содержимое**.
+3. Нажмите кнопку **Опубликовать**.
+4. Готово!
 
-Here a video with the steps:
+Видео иллюстрирующее данные действия.
 <div class="videoWrapper">
 	<iframe width="640" height="360" src="https://www.youtube.com/embed/HJ2uo-Pe-gY?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <div class="note">
-<div class="title">Editor</div>
-By default, Bludit uses TinyMCE as its content editor; you can use choose alternatives in the plugin section. <a href="https://docs.bludit.com/en/content/how-to-change-the-editor">How to change the editor</a>
+<div class="title">Редактор</div>
+По умолчанию, Buldit использует редактор TinyMCE; Но вы всегда можете выбрать любой другой редактор. <a href="https://docs.bludit.com/en/content/how-to-change-the-editor">Как изменить редактор</a>
 </div>

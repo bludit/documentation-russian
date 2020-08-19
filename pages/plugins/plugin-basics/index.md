@@ -1,10 +1,10 @@
-# Plugin basics
+# Основы плагина
 <!-- position: 1 -->
 
-Plugins in Bludit reside in the `bl-plugins` folder, and they have a predefined structure. Each plugin is an object in Bludit, with differents hooks (methods).
+Плагины в Bludit находятся в папке `bl-plugins`, и они имеют предопределенную структуру. Каждый плагин является объектом в Bludit, с различными hook'ами (методами).
 
-<h2 id="structure">Folder and Files Structure</h2>
-These are the mandatory folder structure and files for a plugin:
+<h2 id="structure">Структура папок и файлов</h2>
+Это обязательная структура папок и файлов для плагина:
 
 ```
 /bl-plugins/{PLUGIN_NAME}/
@@ -13,8 +13,8 @@ These are the mandatory folder structure and files for a plugin:
 	plugin.php
 ```
 
-<h2 id="name-and-description">Name and Description</h2>
-The name and description of the plugin is located in the JSON file, `languages/en.json`.
+<h2 id="name-and-description">Название и описание</h2>
+Название и описание плагина хранится в файле формата JSON, `languages/en.json`.
 
 ```
 {
@@ -26,8 +26,8 @@ The name and description of the plugin is located in the JSON file, `languages/e
 }
 ```
 
-<h2 id="information">Information</h2>
-The meta information of the plugin is located in the JSON file, `metadata.json`.
+<h2 id="information">Информация</h2>
+Мета информация плагина хранится в файле формата JSON, `metadata.json`.
 
 ```
 {
@@ -42,8 +42,8 @@ The meta information of the plugin is located in the JSON file, `metadata.json`.
 }
 ```
 
-<h2 id="hello-world">Hello World</h2>
-The Hello World plugin for Bludit. The code below needs to be in the `plugin.php` file.
+<h2 id="hello-world">Привет, Мир!</h2>
+Создадим плагин `Hello, World!` (Привет, Мир!). Приведенный ниже код, должен находится в файле `plugin.php`.
 
 ```
 <?php
@@ -56,6 +56,6 @@ The Hello World plugin for Bludit. The code below needs to be in the `plugin.php
 ```
 
 <div class="note">
-<div class="title">Download</div>
-Download the source code of the plugin <a href="https://github.com/bludit/examples/tree/master/plugins/hello-world">Hello World</a>.
+<div class="title">Примечание</div>
+Скачать исходный код плагина <a href="https://github.com/bludit/examples/tree/master/plugins/hello-world">Hello World</a>.
 </div>

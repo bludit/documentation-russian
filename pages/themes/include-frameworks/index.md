@@ -1,57 +1,57 @@
-# Include frameworks
+# Подключение Framework's
 <!-- position: 7 -->
 
-Themes in Bludit are very flexible; you can use any framework (Bootstrap, Foundation, Bulma, UIkit, Semantic UI, etc), any Javascript code, whatever you want.
+Темы в Bludit очень гибкие, при создании вы можете использовать любой framework ([Bootstrap](http://getbootstrap.com/), [Foundation](https://foundation.zurb.com/), [Bulma](https://bulma.io), [UIkit](https://getuikit.com/), [Semantic UI](https://semantic-ui.com), и т.д.), любой JavaScript код. Все, что захотите!
 
-We include a few frameworks in the documentation, but feel free to add more of them by editing this page.
+Мы подключим несколько фреймворков в документации, но не стесняйтесь добавлять их больше, редактируя эту страницу.
 
-<h2 id="jquery">Include jQuery</h2>
+<h2 id="jquery">Подключение jQuery</h2>
 
-Bludit keeps the latest version of jQuery in its package, you can include it with the helper.
+Bludit по стандарту имеет последнюю версию jQuery в своей сборке.
 ```
 <?php
 	echo Theme::jquery();
 ?>
 ```
 
-HTML output
+HTML вывод
 ```
 <script src="https://www.example.com/bl-kernel/js/jquery.min.js"></script>
 ```
 
-<h2 id="bootstrap">Include Bootstrap</h2>
+<h2 id="bootstrap">Подключение Bootstrap</h2>
 
-Bludit keeps the latest version of Bootstrap in its package, you can include it with the helper.
+Bludit по стандарту имеет последнюю версию Bootstrap в своей сборке..
 
-Include Javascript file for Bootstrap.
+Подключеине JavaScript для Bootstrap.
 ```
 <?php
 	echo Theme::jsBootstrap();
 ?>
 ```
 
-HTML output
+HTML вывод
 ```
 <script src="https://www.example.com/bl-kernel/js/bootstrap.bundle.min.js"></script>
 ```
 
-Include CSS file for Bootstrap.
+Подключение CSS для Bootstrap.
 ```
 <?php
 	echo Theme::cssBootstrap();
 ?>
 ```
 
-HTML output
+HTML вывод
 ```
 <link rel="stylesheet" type="text/css" href="https://www.example.com/bl-kernel/css/bootstrap.min.css">
 ```
 
-<h2 id="uikit">Include UIkit</h2>
+<h2 id="uikit">Подключеине UIkit</h2>
 
-This frameworks is not included in the Bludit package, but you can easily include it with the helpers `Theme::css()` and `Theme::js()`, and using the UIkit CDN or downloading the files and include them to the theme.
+Этот framework, к сожалению, не входит в сборку Bludit. Однако, при желании, вы можете подключить, используя методы `Theme::css()` и `Theme::js()`. Можно использовать UIkit CDN или скачать файлы framework'a.
 
-The following example includes UIkit from a CDN, notice the `false` at the end of the line, this tells to the function we are going to use an externally-hosted file.
+Слудущий пример подключает UIkit из UIkitCDN. Обратите внимание на `false`, это говорит методу, что мы используем внешний файл.
 ```
 <?php
 	echo Theme::css('https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css', false);
@@ -61,10 +61,9 @@ The following example includes UIkit from a CDN, notice the `false` at the end o
 ?>
 ```
 
-HTML output
+HTML вывод
 ```
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/css/uikit.min.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit-icons.min.js"></script>
-```

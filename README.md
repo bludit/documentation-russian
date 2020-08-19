@@ -1,5 +1,5 @@
-# Bludit Documentation Russian Version
-Here you can find all the documentation about Bludit in Russian.
+# Русская документация Bludit.
+Здесь вы можете найти документацию Bludit на русском языке.
 
-This documentation is in sync with the website
+Эта документация синхронизирована с официальным сайтом.
 - https://docs.bludit.com/ru/

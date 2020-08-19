@@ -1,20 +1,20 @@
-# Admin panel: Controller and View via plugins
+# Админ Панель: контроллер и просмотр через плагины.
 <!-- position: 3 -->
 
-Bludit provides an easy way to create a controller and view for the admin panel via plugins.
+Bludit позволяет легко кастоимизировать админ панель с помощью плагинов.
 
 <div class="note">
-This feature is implemented since Bludit v3.13
+Эта функция реализована, начиная с Bludit v3.13
 </div>
 
 ## Notes
-- Bludit by default use [Bootstrap](https://getbootstrap.com/) for the styling, you can use it in the admin view.
-- The endpoint to reach the admin view is `/admin/plugin/<plugin-name>`
+- Bludit по умолчанию использует [Bootstrap](https://getbootstrap.com/) для стилизации, вы можете его использовать в админ панели.
+- Просмотр плагина для админ панели - `/admin/plugin/<plugin-name>`
 
-## Example: Hello world!
-The following plugin changes the metadata `<title>` and the view returns a simple `Hello world!`.
+## Пример: Привет, Мир!
+Данный плагин изменить тег `<title>` и выведет `Hello world!`.
 
-After activate the plugin you can reach the view `https://www.example.com/admin/plugin/hello`.
+После активации плагина, перейдем по адресу `https://www.example.com/admin/plugin/hello`.
 
 ```php
 <?php
@@ -43,10 +43,10 @@ class Hello extends Plugin {
 ?>
 ```
 
-## Example: Change settings via form
-The following plugin has the ability to change the settings of Bludit. The view shows a form and the controller manages the `POST` method.
+## Пример: изменение настрое с помощью формы
+Следующий плагин имеет возможность изменять настройки Bludit. Визуально отображается форма, а контроллер управляется методом `POST`.
 
-After activate the plugin you can reach the view from here `https://www.example.com/admin/plugin/settings`
+После активации плагина, перейдем по адресу `https://www.example.com/admin/plugin/settings`
 
 ```php
 <?php
@@ -97,5 +97,5 @@ class CustomAdmin extends Plugin {
 }
 ```
 
-You can download the full example plugin from here:
+Вы можете скачать исходный код плагина:
 - https://github.com/bludit/examples/tree/master/plugins/custom-controller-view-admin-panel

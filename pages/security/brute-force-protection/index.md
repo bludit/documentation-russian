@@ -1,16 +1,16 @@
-# Brute Force Protection
+# Защита от Brute Force
 <!-- position: 2 -->
 
-## What is a Brute Force Attack?
-This kind of attack consists of an attacker trying many passwords or passphrases with the hope of eventually guessing correctly -Wiki.
+## Что такое Brute Forceы?
+метод угадывания пароля (или ключа, используемого для шифрования), предполагающий систематический перебор всех возможных комбинаций символов до тех пор, пока не будет найдена правильная комбинация. 
 
-## How this works?
-Bludit provides brute force protection to mitigate this kind of attack, and this protection is enabled by default.
+## Как это работает?
+Bludit по стандарту включает данную функцию, она позволяет в какой-то мере обезопасить себя от взлома.
 
-For each failure to log in, Bludit adds the IP of the user who failed to authenticate to a blacklist. When the user fails for a number of times, Bludit blocks the offending IP for a period of time, and the user can't log in until the block has expired.
+Для каждой неудачи входа в систему Blue IT добавляет IP пользователя, который не прошел проверку подлинности, в черный список. Когда пользователь терпит неудачу в течение нескольких раз, плюс он блокирует нарушающий IP-адрес на определенный период времени, и пользователь не может войти в систему, пока срок действия блока не истечет.
 
-## Class and Object
-There is a `Security Object` called `$security`, and the class of the object is `/bl-kernel/security.class.php`. Take a look at the variables inside the class.
+## Классы и объекты
+Существует объект, который вызывает переменную `$security`,а класс объекта - `/bl-kernel/security.class.php`. Переменные внутри класса:
 
 <pre><code data-language="php">
 private $dbFields = array(
@@ -20,11 +20,11 @@ private $dbFields = array(
 );
 </code></pre>
 
-- `minutesBlocked`: Amount of minutes the IP is going to be blocked.
-- `numberFailuresAllowed`: Number of failed attempts for the block to trigger.
-- `blackList`: The list of IPs blocked.
+- `minutesBlocked`: Время на сколько блокируется IP адрес.
+- `numberFailuresAllowed`: Количество неудачных попыток для блокировок.
+- `blackList`: Список заблокированных IP адресов
 
 <div class="note">
-<div class="title">Note</div>
-You can change these values to your own values.
+<div class="title">Примечание</div>
+Вы можете изменить знчения этих переменных.
 </div>

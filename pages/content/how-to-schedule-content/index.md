@@ -1,28 +1,28 @@
-# How to schedule content
+# Как создать запланированную страницу
 <!-- position: 5 -->
 
-You can prepare a page and schedule it to be published on your website at future different date and time.
+Вы можете подготовить страницу и запланировать ее публикацию на вашем сайте в будущем.
 
-To schedule a post for publication:
-1. Create a new page, click on **New content** on the left sidebar.
-2. Click on the **Options** button.
-3. Click on the **Advanced** tab.
-4. Choose the date and time you want the page to be published.
-5. Complete the page, such as title, and content.
-6. Click the **Publish** button.
-7. You can see your scheduled content in **Content > Scheduled**
+Чтобы запланировать публикацию:
+1. Начните создавать новую страницу, выбрав на боковой панели **Новая запись**.
+2. Нажмите на кнопку **Возможности**.
+3. Выберите **Расширенные**.
+4. Выберите желаемую дату публикации.
+5. Заполните все поля. (Название, текст содержимого и т.п.)
+6. Нажмите на кнопку **Публикации**.
+7. Вы можете увидеть даную запись в  **Содержимое > Запланированное**
 
-Here's a video with all steps:
+Видео иллюстрирующее данные действия.
 <div class="videoWrapper">
 	<iframe width="640" height="360" src="https://www.youtube.com/embed/3E8qhXbek5o?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <div class="note">
-<div class="title">Note</div>
-The users can't access the page until the publish date.
+<div class="title">Примечание</div>
+Пользователи не могут получить доступ к странице до даты публикации.
 </div>
 
 <div class="note">
-<div class="title">Note</div>
-You can modify the publish date by editing the page.
+<div class="title">Примечание</div>
+Вы можете изменить дату публикации, изменив страницу.
 </div>

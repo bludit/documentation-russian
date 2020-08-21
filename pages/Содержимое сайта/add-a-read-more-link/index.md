@@ -24,6 +24,6 @@
 ---
 
 <div class="note">
-<div class="title">Note</div>
+<div class="title">Примечание</div>
 В некоторых темах Bludit такая функция автоматическая и не требует вмешательства пользователя.
 </div>

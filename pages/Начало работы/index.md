@@ -1,2 +1,2 @@
-# Getting started
+# Начало работы
 <!-- position: 1 -->

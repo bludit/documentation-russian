@@ -1,2 +1,2 @@
-# Developers
+# Разработчикам
 <!-- position: 8 -->

@@ -18,9 +18,9 @@ Bludit - это веб-приложение, позволяющее создат
 * [GitHub](https://github.com/bludit/bludit)
 
 <h2 id="donations">Пожертвования</h2>
-Пожертвования и поддержка сообщетсва - это то, что помогает проекту развиваться и становиться всегда лучше.
+Пожертвования и поддержка сообщества - это то, что помогает проекту развиваться и становиться всегда лучше.
 * [Paypal](https://www.paypal.me/bluditpro/5)
 * [Patreon](https://www.patreon.com/bludit) - Пожертвование дает возможность использовать Bludit PRO.
 
-<h2 id="license">Лецензия</h2>
+<h2 id="license">Лицензия</h2>
 Bludit это приложение с открытым исходным кодом и распространяющееся под [MIT license.](https://tldrlegal.com/license/mit-license)
